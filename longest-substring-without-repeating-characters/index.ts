@@ -1,3 +1,9 @@
+/**
+ * 无重复字符的最长子串
+ * @date 2022-10-27
+ * @param {any} s:string
+ * @returns {any}
+ */
 const lengthOfLongestSubstring = (s: string): number => {
   const sArr = s.split("");
   const map = new Map<string, number>();
