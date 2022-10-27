@@ -1,10 +1,12 @@
-import { arrayToList } from "../utils/array-to-list.ts";
-import { ListNode } from "../type.ts";
+import { arrayToList } from "/utils/array-to-list.ts";
+import { ListNode } from "/type.ts";
 
-const addTwoNumbers = (
-  l1: ListNode<number>,
-  l2: ListNode<number>
-): ListNode<number> => {
+type AddTwoNumbersFunc<T = number> = (
+  l1: ListNode<T>,
+  l2: ListNode<T>
+) => ListNode<T>;
+
+const addTwoNumbers: AddTwoNumbersFunc = (l1, l2) => {
   let carry = 0;
   const resultList: ListNode<number> = { val: null!, next: null };
   let current = resultList;
