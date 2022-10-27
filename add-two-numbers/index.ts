@@ -6,6 +6,13 @@ type AddTwoNumbersFunc<T = number> = (
   l2: ListNode<T>
 ) => ListNode<T>;
 
+/**
+ * 两数相加
+ * @date 2022-10-27
+ * @param {any} l1
+ * @param {any} l2
+ * @returns {any}
+ */
 const addTwoNumbers: AddTwoNumbersFunc = (l1, l2) => {
   let carry = 0;
   const resultList: ListNode<number> = { val: null!, next: null };

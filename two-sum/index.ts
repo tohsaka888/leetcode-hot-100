@@ -1,3 +1,10 @@
+/**
+ * 两数之和
+ * @date 2022-10-27
+ * @param {any} nums:number[]
+ * @param {any} target:number
+ * @returns {any}
+ */
 const twoSum = (nums: number[], target: number) => {
   const store: Record<string, number> = {};
 
