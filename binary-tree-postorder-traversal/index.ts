@@ -1,5 +1,11 @@
 import { TreeNode } from "/type.ts";
 
+/**
+ * 二叉树的后序遍历
+ * @date 2022-10-28
+ * @param {any} root:TreeNode<number>|null
+ * @returns {any}
+ */
 function postorderTraversal(root: TreeNode<number> | null): number[] {
   const exploredTree: TreeNode<number>[] = [];
   const res: number[] = [];
