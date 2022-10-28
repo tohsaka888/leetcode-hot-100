@@ -5,21 +5,13 @@ function postorderTraversal(root: TreeNode<number> | null): number[] {
   const res: number[] = [];
 
   while (root || exploredTree.length) {
-    if (!root) {
-      const fNode = exploredTree.pop()
-      if (fNode!.right) {
-        res.push(fNode!.right.val)
-      }
+    if (root) {
+      exploredTree.push(root);
+      res.unshift(root.val);
+      root = root.right;
     } else {
-      while (root) {
-        exploredTree.push(root!)
-        if (!root.left) {
-          break;
-        } else {
-            root = root.left
-        }
-      }
-      root = root!.right
+      const fNode = exploredTree.pop()!;
+      root = fNode.left;
     }
   }
 
