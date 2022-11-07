@@ -5,9 +5,9 @@ export type ListNode<T> = {
 
 export type TreeNode<T> = {
   val: T;
-  left: TreeNode<T> | null;
-  right: TreeNode<T> | null;
-};
+  left: TreeNode<T>;
+  right: TreeNode<T>;
+} | null;
 
 export type Node<T> = {
   val: T;
