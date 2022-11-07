@@ -10,4 +10,5 @@
 - [N 叉树的先序遍历](n-ary-tree-preorder-traversal)
 - [N 叉树的后序遍历](n-ary-tree-postorder-traversal)
 - [N 叉树的最大深度](maximum-depth-of-n-ary-tree)
+- [相同的树](same-tree)
 - [无重复的最长字串](longest-substring-without-repeating-characters)
