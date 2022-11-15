@@ -20,9 +20,9 @@ const inorderTraversal: InorderTraversalFunc = (root) => {
       exploredTree.push(root);
       root = root.left;
     } else {
-      const fNode = exploredTree.pop();
-      res.push(fNode!.val!);
-      root = fNode!.right;
+      const fNode = exploredTree.pop()!;
+      res.push(fNode.val!);
+      root = fNode.right;
     }
   }
 
