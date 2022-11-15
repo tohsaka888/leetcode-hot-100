@@ -1,6 +1,14 @@
 import { TreeNode } from "../type.ts";
 import { arrayToTree } from "../utils/array-to-tree.ts";
 
+/**
+ * 二叉树的层序遍历(BFS)
+ * @date 11/15/2022 - 3:45:41 PM
+ *
+ * @template T = number
+ * @param {TreeNode<T>} root
+ * @returns {T[][]}
+ */
 const levelOrder = <T = number>(root: TreeNode<T>): T[][] => {
   const result: T[][] = [];
   const queue: TreeNode<T>[] = [];
