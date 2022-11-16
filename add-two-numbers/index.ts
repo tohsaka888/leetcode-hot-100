@@ -50,4 +50,6 @@ const result = addTwoNumbers(
   arrayToList([9, 9, 9])
 );
 
-console.log(result);
+console.log(JSON.stringify(result));
+
+export default addTwoNumbers;
