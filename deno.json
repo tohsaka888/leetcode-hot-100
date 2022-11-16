@@ -1,25 +1,43 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "lib": ["deno.window", "dom"],
+    "lib": [
+      "dom",
+      "deno.ns",
+      "deno.unstable"
+    ],
     "strict": true
   },
   "importMap": "import_map.json",
   "lint": {
     "files": {
-      "include": ["/"],
-      "exclude": ["/**/__test__"]
+      "include": [
+        "./"
+      ],
+      "exclude": [
+        "./**/__test__"
+      ]
     },
     "rules": {
-      "tags": ["recommended"],
-      "include": ["ban-untagged-todo"],
-      "exclude": ["no-unused-vars"]
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-untagged-todo"
+      ],
+      "exclude": [
+        "no-unused-vars"
+      ]
     }
   },
   "fmt": {
     "files": {
-      "include": ["/"],
-      "exclude": ["/**/__test__"]
+      "include": [
+        "./"
+      ],
+      "exclude": [
+        "./**/__test__"
+      ]
     },
     "options": {
       "useTabs": true,
@@ -31,8 +49,9 @@
   },
   "test": {
     "files": {
-      "include": ["/"],
-      "exclude": ["/**/__test__"]
+      "include": [
+        "./"
+      ]
     }
   }
 }
