@@ -29,6 +29,7 @@ const inorderTraversal: InorderTraversalFunc = (root) => {
   return res;
 };
 
-const result = inorderTraversal(arrayToTree([1, null, 2, 3]));
+// const result = inorderTraversal(arrayToTree([1, null, 2, 3]));
+// console.log(result);
 
-console.log(result);
+export default inorderTraversal;
