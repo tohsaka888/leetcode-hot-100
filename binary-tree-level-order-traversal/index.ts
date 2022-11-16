@@ -44,5 +44,7 @@ const levelOrder = <T = number>(root: TreeNode<T>): T[][] => {
   return result;
 };
 
-const result = levelOrder(arrayToTree([3, 9, 20, null, null, 15, 7]));
-console.log(result);
+// const result = levelOrder(arrayToTree([3, 9, 20, null, null, 15, 7]));
+// console.log(result);
+
+export default levelOrder;
