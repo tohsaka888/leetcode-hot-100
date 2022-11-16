@@ -45,11 +45,4 @@ const addTwoNumbers: AddTwoNumbersFunc = (l1, l2) => {
   return resultList.next;
 };
 
-const result = addTwoNumbers(
-  arrayToList([9, 9, 9, 9, 9, 9]),
-  arrayToList([9, 9, 9])
-);
-
-console.log(JSON.stringify(result));
-
 export default addTwoNumbers;
