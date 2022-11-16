@@ -20,6 +20,9 @@ function createTree<T>(root: TreeNode<T>, leftVal: T, rightVal: T) {
 }
 
 function arrayToTree<T>(arr: T[]) {
+  if (!arr.length) {
+    return null;
+  }
   let i = 0;
   const tree: TreeNode<T> = { val: arr[0], left: null, right: null };
   const queue = [tree];
