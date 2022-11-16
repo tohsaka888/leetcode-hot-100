@@ -6,14 +6,14 @@ import { TreeNode } from "/type.ts";
  * @param {any} root:TreeNode<number>|null
  * @returns {any}
  */
-function postorderTraversal(root: TreeNode<number> | null): number[] {
-  const exploredTree: TreeNode<number>[] = [];
+function postorderTraversal(root: TreeNode<number | null>): number[] {
+  const exploredTree: TreeNode<number | null>[] = [];
   const res: number[] = [];
 
   while (root || exploredTree.length) {
     if (root) {
       exploredTree.push(root);
-      res.unshift(root.val);
+      res.unshift(root.val!);
       root = root.right;
     } else {
       const fNode = exploredTree.pop()!;
@@ -23,3 +23,5 @@ function postorderTraversal(root: TreeNode<number> | null): number[] {
 
   return res;
 }
+
+export default postorderTraversal;
