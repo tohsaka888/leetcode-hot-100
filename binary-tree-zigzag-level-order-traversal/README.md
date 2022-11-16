@@ -16,3 +16,9 @@
 ```typescript
 deno run ./binary-tree-zigzag-level-order-traversal/index.ts
 ```
+
+### 测试
+
+```typescript
+deno test ./binary-tree-zigzag-level-order-traversal/index.ts
+```

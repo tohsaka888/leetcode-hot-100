@@ -40,5 +40,7 @@ const zigzagLevelOrder = <T = number>(root: TreeNode<T>): T[][] => {
   return result;
 };
 
-const result = zigzagLevelOrder(arrayToTree([3, 9, 20, null, null, 15, 7]));
-console.log(result);
+// const result = zigzagLevelOrder(arrayToTree([3, 9, 20, null, null, 15, 7]));
+// console.log(result);
+
+export default zigzagLevelOrder;
