@@ -2,14 +2,14 @@ import { TreeNode } from "../type.ts";
 
 function createTree<T>(root: TreeNode<T>, leftVal: T, rightVal: T) {
   if (root) {
-    if (leftVal) {
+    if (leftVal !== null && leftVal !== undefined) {
       root.left = {
         val: leftVal,
         left: null,
         right: null,
       };
     }
-    if (rightVal) {
+    if (rightVal !== null && rightVal !== undefined) {
       root.right = {
         val: rightVal,
         left: null,
