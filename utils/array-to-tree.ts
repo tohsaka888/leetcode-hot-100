@@ -24,7 +24,7 @@ function arrayToTree<T>(arr: (T | null)[]): TreeNode<T> {
     return null;
   }
   let i = 0;
-  const tree: TreeNode<T> = arr[0] ? { val: arr[0], left: null, right: null } : null;
+  const tree: TreeNode<T> = { val: arr[0]!, left: null, right: null };
   const queue = [tree];
   while (i < arr.length) {
     const node = queue.shift();
