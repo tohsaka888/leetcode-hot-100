@@ -2,6 +2,7 @@
   "imports": {
     "/": "./",
     "./": "./",
-    "asserts": "https://deno.land/std@0.164.0/testing/asserts.ts"
+    "asserts": "https://deno.land/std@0.164.0/testing/asserts.ts",
+    "array-to-tree": "./utils/array-to-tree.ts"
   }
 }
