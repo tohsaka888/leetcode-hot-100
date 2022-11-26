@@ -1,5 +1,5 @@
 import { assertEquals } from "asserts";
-import { arrayToTree } from "../../utils/array-to-tree.ts";
+import { arrayToTree } from "array-to-tree";
 import zigzagLevelOrder from "../index.ts";
 
 Deno.test("二叉树的锯齿层序遍历", () => {
