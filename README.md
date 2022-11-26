@@ -20,3 +20,4 @@
 - [左叶子之和](/sum-of-left-leaves)
 - [验证二叉搜索树](/validate-binary-search-tree)
 - [恢复二叉搜索树](/recover-binary-search-tree)
+- [将有序数组转换为二叉搜索树](/convert-sorted-array-to-binary-search-tree)
