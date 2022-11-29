@@ -3,6 +3,7 @@
     "/": "./",
     "./": "./",
     "asserts": "https://deno.land/std@0.164.0/testing/asserts.ts",
-    "array-to-tree": "./utils/array-to-tree.ts"
+    "array-to-tree": "./utils/array-to-tree.ts",
+    "array-to-list": "./utils/array-to-list.ts"
   }
 }
