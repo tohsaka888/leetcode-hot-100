@@ -21,3 +21,4 @@
 - [验证二叉搜索树](/validate-binary-search-tree)
 - [恢复二叉搜索树](/recover-binary-search-tree)
 - [将有序数组转换为二叉搜索树](/convert-sorted-array-to-binary-search-tree)
+- [有序链表转换二叉搜索树](/convert-sorted-list-to-binary-search-tree)
